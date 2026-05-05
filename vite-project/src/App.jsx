@@ -27,7 +27,7 @@ function ClickHistory({ history, length, resetHistory }) {
     }}>
       <h2>History - {length}</h2>
       <ul>
-        {history.map((his, index) => <li key={index}><p>{his}</p></li>)}
+        {length === 0 ? <p style={{color: 'gray', fontStyle: 'italic'}}>No selections yet.</p> : history.map((his, index) => <li key={index}><p>{his}</p></li>)}
       </ul>
       <button onClick={resetHistory}>Clear History</button>
     </section>
