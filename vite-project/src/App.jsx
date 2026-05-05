@@ -67,6 +67,7 @@ function App() {
   let id = 1;
   const getId = () => id++;
   const greetings = [
+    {id: getId(), language: 'English', message: 'Good Morning'},
     {id: getId(), language: 'Spanish', message: 'Buen día'},
     {id: getId(), language: 'Haitan Creole', message: 'Bon maten'},
     {id: getId(), language: 'Portuguese', message: 'Bom dia'},
